@@ -50,10 +50,6 @@ nav {
       &:hover {
         border-bottom: 3px solid black;
       }
-
-      &:link {
-        color: black;
-      }
     }
   }
 
@@ -70,6 +66,9 @@ nav {
     text-decoration: none;
     &:visited {
       color: inherit;
+    }
+    &:link {
+      color: black;
     }
   }
 }
