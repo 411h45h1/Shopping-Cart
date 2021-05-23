@@ -1,3 +1,21 @@
+
+@import './sass/Store.scss';
+@import './sass/Cart.scss';
+
 .App {
-  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blanchedalmond;
+}
+
+.storeCont {
+  height: 90vh;
+  width: 90vw;
+  border: 4px solid black;
+  border-radius: 10px; 
+  background-color: coral;
+  
 }
