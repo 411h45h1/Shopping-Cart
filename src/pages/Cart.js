@@ -1,9 +1,9 @@
 const Cart = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <div className="cartCont">
+      <div></div>
+    </div>
+  );
+};
 
-export default Cart
+export default Cart;

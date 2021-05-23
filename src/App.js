@@ -6,19 +6,23 @@ import { createStore } from "redux";
 import cartReducer from "./core/reducers/cartReducer";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Nav from "./components/Nav";
 
 const state = createStore(cartReducer);
 
-const App = () => 
-    <Provider store={state}>
-      <Router>
-        <div className="App">
-          <Switch>
-            <Route exact path="/" component={Store} />
-            <Route path="/cart" component={Cart} />
-          </Switch>
-        </div>
-      </Router>
-    </Provider>
-  
+const App = () => (
+  <Provider store={state}>
+    <Router>
+      <div className="App">
+        <Nav />
+
+        <Switch>
+          <Route exact path="/" component={Store} />
+          <Route path="/cart" component={Cart} />
+        </Switch>
+      </div>
+    </Router>
+  </Provider>
+);
+
 export default App;

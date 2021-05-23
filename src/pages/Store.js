@@ -1,12 +1,9 @@
-
 const Store = () => {
-    return (
-        <div className="storeCont" >
-            <h1>
-                Store
-            </h1>
-        </div>
-    )
-}
+  return (
+    <div className="storeCont">
+      <div></div>
+    </div>
+  );
+};
 
-export default Store
+export default Store;
