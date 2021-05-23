@@ -1,7 +1,8 @@
 import React from "react";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <nav>
       <Link to="/" className="main">
@@ -16,7 +17,7 @@ const Nav = () => {
         </li>
         <li>
           <Link to="/cart" className="links">
-            Cart
+            Cart {props.cart.length > 0 ? <sup>{props.cart.length}</sup> : null}
           </Link>
         </li>
       </ul>
@@ -24,4 +25,10 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+const mapStateToProps = (state) => {
+  return {
+    cart: state.itemsInCart,
+  };
+};
+
+export default connect(mapStateToProps)(Nav);

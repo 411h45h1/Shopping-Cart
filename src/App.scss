@@ -22,6 +22,16 @@ nav {
   justify-content: space-between;
   width: 95%;
   font-weight: bold;
+
+  sup {
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    padding-right: 2px;
+    padding-left: 2px;
+    border-radius: 5px;
+  }
+
   .brand {
     font-size: 40px;
     text-decoration: none;
@@ -34,6 +44,13 @@ nav {
     justify-content: space-between;
     width: 20%;
     list-style-type: none;
+
+    li {
+      border-bottom: 3px solid transparent;
+      &:hover {
+        border-bottom: 3px solid black;
+      }
+    }
   }
 
   .main {
