@@ -1,17 +1,11 @@
 import React from "react";
 
-const StoreItem = () => {
-  const randomNum = Math.floor(1 + Math.random() * 900);
+const StoreItem = ({ title, src }) => {
   return (
     <div className="storeItem">
-      <img
-        alt="cat"
-        src={`https://loremflickr.com/320/240/${
-          randomNum % 2 === 0 ? "cats" : "dogs"
-        }?random=${randomNum}`}
-      />
+      <img alt="cat" src={src} />
       <div className="info">
-        <h2>Cat #{randomNum} </h2>
+        <h2>{title} </h2>
         <button>Add to cart</button>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

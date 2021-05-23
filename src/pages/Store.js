@@ -1,16 +1,20 @@
+import { connect } from "react-redux";
 import StoreItem from "../components/StoreItem";
 
-const Store = () => {
+const Store = (props) => {
   return (
     <div className="storeCont">
-      <StoreItem />
-      <StoreItem />
-      <StoreItem />
-      <StoreItem />
-      <StoreItem />
-      <StoreItem />
+      {props.catalog.map((i, k) => (
+        <StoreItem key={k} title={i.title} src={i.src} />
+      ))}
     </div>
   );
 };
 
-export default Store;
+const mapStateToProps = (state) => {
+  return {
+    catalog: state.catalog,
+  };
+};
+
+export default connect(mapStateToProps)(Store);
