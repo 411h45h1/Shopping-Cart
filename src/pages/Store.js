@@ -1,7 +1,14 @@
+import StoreItem from "../components/StoreItem";
+
 const Store = () => {
   return (
     <div className="storeCont">
-      <div></div>
+      <StoreItem />
+      <StoreItem />
+      <StoreItem />
+      <StoreItem />
+      <StoreItem />
+      <StoreItem />
     </div>
   );
 };
