@@ -5,7 +5,62 @@
   border-radius: 10px;
   background-color: paleturquoise;
 
-  div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+
+  .catalogItem {
     margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 320px;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow-x: hidden;
+
+    button {
+      border: 2px solid transparent;
+      background-color: tomato;
+      color: white;
+      font-weight: bold;
+      height: 30px;
+      border-radius: 7px;
+      cursor: pointer;
+      padding: 5px;
+
+      &:hover {
+        border: 2px solid black;
+        transform: scale3d(0.95, 0.95, 1);
+      }
+    }
+
+    .info {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      background-color: blanchedalmond;
+      padding: 5px;
+
+      span {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+
+    h3 {
+      margin: 0px;
+    }
+
+    p {
+      margin: 0px;
+    }
   }
 }

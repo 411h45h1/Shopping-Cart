@@ -6,12 +6,12 @@
   background-color: coral;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
   overflow-y: scroll;
 
-  .storeItem {
+  .catalogItem {
     margin: 10px;
     display: flex;
     align-items: center;
@@ -23,16 +23,17 @@
     overflow-x: hidden;
 
     button {
-      border: none;
+      border: 2px solid transparent;
       background-color: rgb(190, 118, 23);
       color: white;
       font-weight: bold;
       height: 30px;
-      border-radius: 10px;
+      border-radius: 7px;
       cursor: pointer;
+      padding: 5px;
 
       &:hover {
-        transition-duration: 1s;
+        border: 2px solid black;
         transform: scale3d(0.95, 0.95, 1);
       }
     }
@@ -44,9 +45,17 @@
       flex-direction: column;
       background-color: blanchedalmond;
       padding: 5px;
+
+      span {
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
     }
 
-    h2 {
+    h3 {
       margin: 0px;
     }
 

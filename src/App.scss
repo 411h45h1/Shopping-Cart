@@ -1,6 +1,11 @@
 @import "./sass/Store.scss";
 @import "./sass/Cart.scss";
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   height: 100vh;
   width: 100vw;
@@ -27,7 +32,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 15%;
+    width: 20%;
     list-style-type: none;
   }
 

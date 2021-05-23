@@ -1,11 +1,17 @@
 import { connect } from "react-redux";
-import StoreItem from "../components/StoreItem";
+import CatalogItem from "../components/CatalogItem";
 
 const Store = (props) => {
   return (
     <div className="storeCont">
       {props.catalog.map((i, k) => (
-        <StoreItem key={k} title={i.title} src={i.src} />
+        <CatalogItem
+          key={k}
+          id={i.id}
+          title={i.title}
+          src={i.src}
+          price={i.price}
+        />
       ))}
     </div>
   );
