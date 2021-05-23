@@ -9,12 +9,17 @@ const Cart = (props) => {
   return (
     <div className="cartCont">
       <div style={{ width: "100%" }}>
-        {props.total && (
-          <h2 style={{ fontSize: "50px", margin: "5px" }}>
+        {props.total > 0 ? (
+          <h2 style={{ fontSize: "30px", margin: "5px" }}>
             Total: ${formattedTotal}
+          </h2>
+        ) : (
+          <h2 style={{ fontSize: "30px", margin: "5px" }}>
+            Your cart is empty
           </h2>
         )}
       </div>
+
       {props.cart.map((i, k) => (
         <CatalogItem
           key={k}
