@@ -11,6 +11,7 @@ const Store = (props) => {
           title={i.title}
           src={i.src}
           price={i.price}
+          desc={i.desc}
         />
       ))}
     </div>
