@@ -18,12 +18,7 @@ const CatalogItem = (props) => {
         ) : (
           <button onClick={() => props.addToCart(props.id)}>Add to cart</button>
         )}
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+        <p>{props.desc}</p>
       </div>
     </div>
   );

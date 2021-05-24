@@ -3,43 +3,59 @@ import {
   REMOVE_FROM_CART,
 } from "../actions/types/cartActionTypes";
 
+const placeholderText =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+
 const initState = {
   catalog: [
     {
       id: Math.floor(1 + Math.random() * 9000),
-      title: "Cat",
+      title: "Kitten",
       src: "/assets/cat1.webp",
       price: 350,
+      desc: placeholderText,
     },
     {
       id: Math.floor(1 + Math.random() * 9000),
-      title: "Dog",
+      title: "Puppy",
       src: "/assets/dog1.jpeg",
-      price: 852,
+      price: 400,
+      desc: placeholderText,
     },
     {
       id: Math.floor(1 + Math.random() * 9000),
-      title: "Cat",
+      title: "Kitten",
       src: "/assets/cat2.webp",
       price: 350,
+      desc: placeholderText,
     },
     {
       id: Math.floor(1 + Math.random() * 9000),
-      title: "Dog",
+      title: "CatDog",
       src: "/assets/dog2.jpeg",
-      price: 950,
+      price: 1500,
+      desc: placeholderText,
     },
     {
       id: Math.floor(1 + Math.random() * 9000),
-      title: "cat",
+      title: "Kittens",
       src: "/assets/cat3.jpeg",
-      price: 600,
+      price: 700,
+      desc: placeholderText,
     },
     {
       id: Math.floor(1 + Math.random() * 9000),
-      title: "Dog",
+      title: "Puppies",
       src: "/assets/dog3.jpeg",
       price: 650,
+      desc: placeholderText,
+    },
+    {
+      id: Math.floor(1 + Math.random() * 9000),
+      title: "Doge",
+      src: "/assets/doge.jpeg",
+      price: 650,
+      desc: placeholderText,
     },
   ],
   itemsInCart: [],
